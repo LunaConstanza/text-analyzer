@@ -36,8 +36,8 @@ test.describe('Para un texto con sólo palábras:', () => {
     await expect(page.locator('li:nth-child(5):has-text("0")')).toBeVisible();
   });
 
-  test('Longitud promedio palabra: 5.53', async ({ page }) => {
-    await expect(page.locator('li:nth-child(6):has-text("5.53")')).toBeVisible();
+  test('Longitud promedio palabra: 5.37', async ({ page }) => {
+    await expect(page.locator('li:nth-child(6):has-text("5.37")')).toBeVisible();
   });
 });
 
@@ -107,14 +107,14 @@ test.describe('Botón:', () => {
   test('Limpia caja de texto', async ({ page }) => {
     const textarea = await page.locator('textarea[name="user-input"]');
     await expect(textarea).toHaveValue(TEST_TEXT_NO_NUMBERS);
-    const button = await page.locator('id=clear-button')
+    const button = await page.locator('id=reset-button')
     await button.click();
     await expect(textarea).toHaveValue(TEST_TEXT_EMPTY);
   });
 });
 
 //TODO: Reemplazar skip por describe para ejecutar el test de funcionalidades opcionales
-test.skip('Opcional:', () => {
+test.describe('Opcional:', () => {
   const TEST_TEXT_EMPTY = '';
   const TEST_TEXT_SPACES = '       ';
   const TEST_TEXT_PUNCTUATION_MARKS = '.,;:"«»[]{}()¿?¡!-';

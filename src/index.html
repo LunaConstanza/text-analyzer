@@ -8,6 +8,25 @@
 </head>
 
 <body>
+  <header>
+    <h1>Bienvenide al analizador de texto</h1>
+    <h3>Aquí podrás resolver todas tus inquietudes, cada vez que escribas algo sabrás cuántas palabras contiene tu párrafo y más.</h3>
+  </header>
+  <main>
+    <textarea name="user-input" placeholder="Escribe algo... no te limites."></textarea>
+    <ul class="containerList">
+      <li class="list">Cantidad de palabras: <span class="list1"></span></li>
+      <li class="list">Cantidad de caracteres: <span class="list2"></span></li>
+      <li class="list">Cantidad de caracteres sin espacios ni signos de puntuación: <span class="list3"></span></li>
+      <li class="list">Cantidad de números: <span class="list4"></span></li>
+      <li class="list">Suma de números: <span class="list5"></span></li>
+      <li class="list">Longitud media de palabras: <span class="list6"></span></li>
+    </ul>
+    <button id="reset-button">Limpiar texto y analizador</button>
+  </main>
+  <footer>
+    <p>Realizado por Luna González</p>
+  </footer>
   <script src="index.js" type="module"></script>
 </body>
 </html>

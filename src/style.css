@@ -1,0 +1,75 @@
+body{
+    padding: 0;
+    margin: 50px 200px;
+    background-image: url(https://thumbs.dreamstime.com/b/mosaico-incons%C3%BAtil-del-modelo-del-fondo-de-letras-negras-en-el-fondo-blanco-84185055.jpg);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  header{
+    color: white;
+    background-color: rgb(116, 13, 13);
+    border-radius: 100px 100px 0 0;
+    padding: 15px 35px;
+
+  }
+  main{
+    background-color: rgb(9, 0, 48);
+    border-radius: 0 0 100px 100px;
+    padding: 50px;
+  }
+  textarea[name="user-input"]{
+    width: 400px;
+    height: 150px;
+    padding: 15px;
+    border-radius: 15px;
+  }
+  .containerList{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  .list{
+    list-style: none;
+    background-color: burlywood;
+    color:darkred;
+    border-radius: 10px;
+    padding: 5px 10px ;
+    margin: 10px;
+  }
+  #reset-button{
+    border: 3px solid burlywood;
+    border-radius: 100px;
+    background-color: darkred;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  #reset-button:hover{
+    background-color: burlywood;
+    border: 3px solid darkred;
+    color: black;
+  }
+  #reset-button:active{
+    border: 3px solid burlywood;
+    background-color: darkred;
+    color: white;
+  }
+  footer{
+    background-color: rgb(116, 13, 13);
+    color: white;
+    border-radius: 100px;
+    height: 30px;
+    padding: 5px;
+    margin-top: 20px;
+  }
+  footer p{
+    padding: 0;
+    margin: 0;
+  }
