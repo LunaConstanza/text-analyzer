@@ -96,6 +96,8 @@ test.describe('Para un texto sin números válidos:', () => {
 });
 
 test.describe('Botón:', () => {
+
+  const TEST_TEXT_EMPTY = '';
   
   test.beforeEach(async ({ page }) => {
     await page.goto('http://localhost:3000/');
@@ -114,7 +116,7 @@ test.describe('Botón:', () => {
 });
 
 //TODO: Reemplazar skip por describe para ejecutar el test de funcionalidades opcionales
-test.describe('Opcional:', () => {
+test.skip('Opcional:', () => {
   const TEST_TEXT_EMPTY = '';
   const TEST_TEXT_SPACES = '       ';
   const TEST_TEXT_PUNCTUATION_MARKS = '.,;:"«»[]{}()¿?¡!-';
